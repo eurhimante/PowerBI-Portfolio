@@ -50,7 +50,7 @@ Fact_Sales
 
 ---
 ## DASHBOARD  
-![Dashboard](01-Business-Performance/images/Executive Overview.png)
+<img width="1517" height="652" alt="Executive Overview" src="https://github.com/user-attachments/assets/b2e61382-6b05-4c4d-acad-9ccbb853d423" />
 
 Executive Overview (Dashboard) permit to identify :
 Top-performing countries
