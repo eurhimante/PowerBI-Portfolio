@@ -25,14 +25,14 @@ Nous utiliserons le Financial Sample officiel de Microsoft.
 
 Il contient notamment des données de ventes et de profits, avec des dimensions telles que les segments et les pays.
 
-Organisation : 
+Organisation du rapport BI : 
 Dashboard Pages
 Executive Overview
 Sales Analysis
 Profitability Analysis
 Key Insights
 
-The dashboard allows users to identify:
+Le dashboard permet d'identifier:
 
 Top-performing countries
 Most profitable products
