@@ -49,8 +49,30 @@ Dim_Date
 Fact_Sales
 
 ---
+DASHBOARD : 
+![Dashboard](images/Executive Overview.png)
 
+Executive Overview (Dashboard) permit to identify :
+Top-performing countries
+Most profitable products
+Sales trends over time
+High-performing customer segments
 
-```DAX
-Total Sales =
-SUM(Fact_Sales[Sales])
+Key Insight : 
+• The United States and Canada are the largest contributors to total sales.
+
+• Government is the most profitable customer segment.
+
+• Paseo is the highest-selling product in the dataset.
+
+• Germany shows the highest profit margin among the analyzed countries.
+
+• Sales exhibit strong seasonality, with a marked increase in October.
+
+Skills Demonstrated :
+Power Query
+Data Modeling
+DAX
+Time Intelligence
+Interactive Dashboards
+Data Visualization
