@@ -49,8 +49,8 @@ Dim_Date
 Fact_Sales
 
 ---
-DASHBOARD : 
-![Dashboard](images/Executive Overview.png)
+## DASHBOARD  
+![Dashboard](01-Business-Performance/images/Executive Overview.png)
 
 Executive Overview (Dashboard) permit to identify :
 Top-performing countries
