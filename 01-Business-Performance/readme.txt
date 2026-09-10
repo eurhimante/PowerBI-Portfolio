@@ -32,6 +32,9 @@ Sales Analysis
 Profitability Analysis
 Key Insights
 
+DASHBOARD : 
+![Dashboard](images/Executive Overview.png)
+
 Le dashboard permet d'identifier:
 
 Top-performing countries
