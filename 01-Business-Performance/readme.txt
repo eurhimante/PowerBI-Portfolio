@@ -24,3 +24,27 @@ Quels produits sont peu rentables ?
 Nous utiliserons le Financial Sample officiel de Microsoft.
 
 Il contient notamment des données de ventes et de profits, avec des dimensions telles que les segments et les pays.
+
+Organisation du rapport BI : 
+Dashboard Pages
+Executive Overview
+Sales Analysis
+Profitability Analysis
+Key Insights
+
+DASHBOARD : 
+Le dashboard permet d'identifier:
+
+Top-performing countries
+Most profitable products
+Sales trends over time
+High-performing customer segments
+
+Skills Demonstrated :
+
+Power Query
+Data Modeling
+DAX
+Time Intelligence
+Interactive Dashboards
+Data Visualization
