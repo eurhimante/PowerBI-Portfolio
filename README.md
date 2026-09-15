@@ -1,78 +1,150 @@
-# Business Performance Dashboard
+# Power BI Portfolio
 
-## Project Overview
-
-This project analyzes business performance using Power BI.
-
-The objective is to provide an interactive dashboard allowing stakeholders to analyze sales, profit, profitability and performance across countries, products and customer segments.
+A portfolio of Power BI projects demonstrating skills in **data preparation, data modeling, DAX, interactive dashboards and data visualization** across business and health data applications.
 
 ---
 
-## Business Questions
+## Projects
 
-- How are sales evolving over time?
-- Which countries generate the most revenue?
-- Which products are the most profitable?
-- Which customer segments generate the most profit?
-- How does performance compare with the previous year?
+### 01 — Business Performance Dashboard
+
+**Business Intelligence · Sales · Profitability**
+
+Interactive dashboard analyzing commercial performance across countries, products and customer segments.
+
+**Key analyses:**
+
+* Sales and profit performance
+* Sales evolution over time
+* Country and product comparisons
+* Customer segment profitability
+* Year-over-year performance
+* Product-level analysis
+
+**Power BI skills demonstrated:**
+
+* Power Query
+* Data modeling
+* Star schema
+* DAX
+* Time Intelligence
+* Interactive dashboards
+* Drill-through analysis
+
+[View project →](./01-Business-Performance)
+
+---
+
+### 02 — Global Liver Cancer Atlas
+
+**Health Data · Epidemiology · Geographic & Socioeconomic Analysis**
+
+Interactive dashboard exploring global liver cancer incidence and mortality using **GLOBOCAN 2024**, combined with socioeconomic indicators from the **UNDP** and **World Bank**.
+
+**Key analyses:**
+
+* Global liver cancer incidence and mortality
+* Age-standardized incidence and mortality rates
+* Mortality-to-incidence ratio (MIR)
+* Geographic disparities between countries
+* Association between cancer indicators and HDI
+* Association between cancer indicators and GDP per capita
+* Country-level profiles
+
+**Power BI skills demonstrated:**
+
+* Multi-source data integration
+* Power Query
+* Relational data modeling
+* DAX measures
+* Geographic visualization
+* Interactive maps
+* Scatter plot analysis
+* Key Influencers
+* Drill-through
+* Dynamic filtering
+
+[View project →](./02-Global-Liver-Cancer-Atlas)
+
+---
+
+## Portfolio Overview
+
+| Project                            | Domain                | Main focus                               | Data                       |
+| ---------------------------------- | --------------------- | ---------------------------------------- | -------------------------- |
+| **01 — Business Performance**      | Business Intelligence | Sales & profitability                    | Excel                      |
+| **02 — Global Liver Cancer Atlas** | Health Data           | Epidemiology & socioeconomic disparities | GLOBOCAN, UNDP, World Bank |
+
+The projects are intentionally built around different datasets and analytical contexts to demonstrate how Power BI can be applied beyond a single business use case.
+
+---
+
+## Skills Demonstrated
+
+### Data Preparation
+
+* Power Query
+* Data cleaning and transformation
+* Data type validation
+* Multi-source data integration
+* Data quality checks
+
+### Data Modeling
+
+* Fact and dimension tables
+* Star-schema-oriented modeling
+* Relationships and filtering
+* Date dimension
+* Geographic data modeling
+
+### DAX
+
+* Aggregation measures
+* Calculated indicators
+* Ratios and percentages
+* Time Intelligence
+* Year-over-year analysis
+* Context-aware calculations
+
+### Data Visualization
+
+* KPI cards
+* Interactive charts
+* Geographic maps
+* Scatter plots
+* Ranking visualizations
+* Interactive slicers
+* Drill-through pages
+* Key Influencers
 
 ---
 
 ## Tools
 
-- Power BI Desktop
-- Power Query
-- DAX
-- Excel
+* **Power BI Desktop**
+* **Power Query**
+* **DAX**
+* **Microsoft Excel**
+* **Git / GitHub**
 
 ---
 
-## Data Preparation
+## About
 
-The dataset was imported from an Excel workbook.
+This portfolio was created to develop and demonstrate practical **Power BI and data analytics skills** through complete projects, from data preparation and modeling to interactive dashboard design.
 
-Data preparation included:
+My background is in **bioinformatics and health data analysis**, with experience working with scientific datasets, statistical analysis, Python and R.
 
-- Data type validation
-- Data quality checks
-- Table renaming
-- Date table creation
+This portfolio therefore includes both **business-oriented** and **health-data-oriented** projects.
 
 ---
 
-## Data Model
+## Author
 
-The report uses a simple star schema:
+**Fabien Foucher**
 
-Dim_Date
-    ↓
-Fact_Sales
+Data Scientist / Bioinformatics Scientist
 
----
-## DASHBOARD  
-<img width="1517" height="652" alt="Executive Overview" src="https://github.com/user-attachments/assets/b2e61382-6b05-4c4d-acad-9ccbb853d423" />
+**Python · R · Machine Learning · Health Data · Power BI**
 
-Executive Overview (Dashboard) permit to identify :
-Top-performing countries
-Most profitable products
-Sales trends over time
-High-performing customer segments
-
-Key Insight : 
-• The United States and Canada are the largest contributors to total sales.
-
-• Government is the most profitable customer segment.
-
-• Paseo is the highest-selling product in the dataset.
-
-• Germany shows the highest profit margin among the analyzed countries.
-
-• Sales exhibit strong seasonality, with a marked increase in October.
-
-Skills Demonstrated :
-Power Query
-Data Modeling
-DAX
-Time Intelligence
-Interactive Dashboards
-Data Visualization
+[GitHub](https://github.com/eurhimante)
