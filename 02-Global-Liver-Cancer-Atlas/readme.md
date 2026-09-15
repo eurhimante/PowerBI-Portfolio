@@ -269,7 +269,7 @@ This project combines two areas of interest:
 The objective was to move beyond a purely technical Power BI exercise and demonstrate how heterogeneous scientific datasets can be transformed into an interactive analytical tool.
 
 The project is also closely related to previous research work on the geographic diversity of liver cancers and global socioeconomic inequalities.
-
+https://pubmed.ncbi.nlm.nih.gov/40452835/
 ---
 
 ## Author
