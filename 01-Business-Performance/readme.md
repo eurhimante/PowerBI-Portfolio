@@ -1,78 +1,140 @@
-# Business Performance Dashboard
+# 01 — Business Performance Dashboard | Power BI
 
-## Project Overview
+[← Back to Power BI Portfolio](../README.md)
 
-This project analyzes business performance using Power BI.
+**An interactive business intelligence report for monitoring sales, profit and profitability across countries, products, customer segments and time.**
 
-The objective is to provide an interactive dashboard allowing stakeholders to analyze sales, profit, profitability and performance across countries, products and customer segments.
+**Tools:** Power BI Desktop · Power Query · DAX · Excel  
+**Dataset:** Microsoft Financial Sample (demonstration data)  
+**Report:** [`BusinessPerformance.pbix`](BusinessPerformance.pbix)
 
----
+![Executive Overview dashboard](images/Executive%20Overview.png)
 
-## Business Questions
+## 1. Project overview
 
-- How are sales evolving over time?
-- Which countries generate the most revenue?
-- Which products are the most profitable?
-- Which customer segments generate the most profit?
-- How does performance compare with the previous year?
+Business stakeholders need a consolidated view of commercial performance to understand **where revenue comes from, which activities generate profit, and how results change over time**. This project transforms an Excel-based financial dataset into a four-page interactive Power BI report.
 
----
+The dashboard is designed for exploratory decision support: users can start with company-wide indicators, then investigate specific countries, segments and products.
 
-## Tools
+### Business questions
 
-- Power BI Desktop
-- Power Query
-- DAX
-- Excel
+- How do sales and profit evolve over time? Are there recurring peaks or slow periods?
+- Which countries contribute the most to sales?
+- Which products lead in revenue, and how does their profitability compare?
+- Which customer segments contribute most to profit?
+- How do current-period results compare with the previous year?
 
----
+## 2. Dataset and scope
 
-## Data Preparation
+**Source:** [`Financial Sample.xlsx`](data/Financial%20Sample.xlsx), Microsoft's publicly available financial sample dataset.
 
-The dataset was imported from an Excel workbook.
+The source includes commercial transactions and attributes such as country, product, customer segment, date, sales and profit. It is used here as a **learning and demonstration dataset**, not as real-time financial information.
 
-Data preparation included:
+**Dimensions used for analysis:**
 
-- Data type validation
-- Data quality checks
-- Table renaming
-- Date table creation
+| Dimension | Analytical purpose |
+|---|---|
+| Date | Monthly evolution and year-over-year comparisons |
+| Country | Geographic sales and profitability comparisons |
+| Product | Product performance and contribution |
+| Segment | Customer segment performance |
 
----
+## 3. Data preparation and modelling
 
-## Data Model
+The workbook was imported into Power BI and prepared using **Power Query**. The workflow included:
 
-The report uses a simple star schema:
+1. Checking data types, especially dates and numeric financial fields.
+2. Reviewing data consistency and potential quality issues.
+3. Renaming tables and columns for easier interpretation.
+4. Creating a dedicated date dimension to support time-based analysis.
+5. Organising the model around a sales fact table linked to the date dimension.
 
+### Simplified data model
+
+```text
 Dim_Date
-    ↓
+   │  (1 → *)
+   ▼
 Fact_Sales
+```
 
----
-## DASHBOARD  
-<img width="1517" height="652" alt="Executive Overview" src="https://github.com/user-attachments/assets/b2e61382-6b05-4c4d-acad-9ccbb853d423" />
+The commercial attributes (country, product and segment) are available for filtering and breakdowns in the sales data. The diagram is **a simplified representation**, not a claim of a fully normalised dimensional model.
 
-Executive Overview (Dashboard) permit to identify :
-Top-performing countries
-Most profitable products
-Sales trends over time
-High-performing customer segments
+## 4. KPIs and analytical features
 
-Key Insight : 
-• The United States and Canada are the largest contributors to total sales.
+The report combines core financial indicators with breakdowns and time comparisons:
 
-• Government is the most profitable customer segment.
+| Indicator | Purpose |
+|---|---|
+| Total Sales | Monitor overall sales volume in monetary terms |
+| Total Profit | Measure aggregate profitability in monetary terms |
+| Profit Margin | Compare profit relative to sales |
+| Sales Growth % | Compare sales across periods |
+| Sales by Country / Product | Identify key revenue contributors |
+| Profit by Segment | Identify segments contributing most to profit |
 
-• Paseo is the highest-selling product in the dataset.
+**Illustration:** In the unfiltered Executive Overview screenshot, the report displays approximately **$118.73M in sales**, **$16.89M in profit** and a **14.23% profit margin**. These figures describe the sample and depend on the active report filters.
 
-• Germany shows the highest profit margin among the analyzed countries.
+### Interactivity
 
-• Sales exhibit strong seasonality, with a marked increase in October.
+- Slicers for **customer segment**, **country** and **year**.
+- Cross-filtering between KPI cards and charts.
+- Navigation between four report pages, from a high-level overview to detailed analysis.
+- Time-series visualisation to investigate changes in sales over the reporting period.
 
-Skills Demonstrated :
-Power Query
-Data Modeling
-DAX
-Time Intelligence
-Interactive Dashboards
-Data Visualization
+## 5. Dashboard walkthrough
+
+### Executive Overview
+
+A compact view of overall sales, profit, profit margin and growth, alongside trends and top contributors by country, segment and product.
+
+![Executive Overview](images/Executive%20Overview.png)
+
+### Sales Analysis
+
+A closer look at sales distribution and evolution over time, designed to compare products, markets and periods.
+
+![Sales Analysis](images/Sales%20Analysis.png)
+
+### Profitability Analysis
+
+A profit-focused page for distinguishing high-revenue areas from the most profitable countries, products and segments.
+
+![Profitability Analysis](images/Profitability%20Analysis.png)
+
+### Product Details
+
+A product-level exploration of performance to identify leading products and compare their contributions.
+
+![Product Details](images/Product%20Details.png)
+
+## 6. Key findings
+
+The sample report highlights several patterns:
+
+- **Geographic contribution:** The United States and Canada are among the largest sales contributors.
+- **Customer segments:** Government is the leading segment in total profit.
+- **Product mix:** Paseo generates the highest sales in the dataset.
+- **Profitability:** Germany shows the strongest profit margin among the countries analysed.
+- **Seasonality:** Sales show a notable peak around October in the period displayed.
+
+These findings are **descriptive observations from the sample dataset**. They are not forecasts, causal conclusions or statements about current business conditions.
+
+## 7. Skills demonstrated
+
+- **Power Query:** importing and preparing Excel data, validating types and organising tables.
+- **Data modelling:** relating a date dimension to transactional sales data.
+- **DAX:** creating financial KPIs, profitability metrics and time-based comparisons.
+- **Power BI reporting:** building interactive slicers, charts, KPI cards and multi-page navigation.
+- **Business analysis:** translating commercial questions into readable indicators and actionable comparisons.
+- **Data storytelling:** moving from an executive summary to more granular exploration.
+
+## 8. Reproduce the report
+
+1. Download or clone this repository.
+2. Open [`BusinessPerformance.pbix`](BusinessPerformance.pbix) using **Power BI Desktop**.
+3. If Power BI cannot find the original data source, update its path to [`data/Financial Sample.xlsx`](data/Financial%20Sample.xlsx) in the data source settings.
+4. Refresh the data and explore the report using its filters and pages.
+
+> **Limitations:** The report uses historical demonstration data. The indicators reflect the dataset and current filter context; the analysis is intended to demonstrate BI skills rather than to support actual financial decisions.
+
